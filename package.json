@@ -1,11 +1,38 @@
 {
-  "name": "React-Redux-Testing",
+  "name": "redux-todomvc",
   "version": "1.0.0",
-  "description": "",
+  "description": "Companion repository for the \"Getting Started with React, Redux and Immutable: a Test-Driven TodoMVC Tutorial\" article.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js \"test/**/*.@(js|jsx)\"",
     "test:watch": "npm run test -- --watch --watch-extensions jsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phacks/redux-todomvc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phacks/redux-todomvc/issues"
+  },
+  "homepage": "https://github.com/phacks/redux-todomvc#readme",
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "chai": "^3.5.0",
+    "chai-immutable": "^1.5.3",
+    "css-loader": "^0.23.1",
+    "jsdom": "^8.0.4",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
   },
   "babel": {
     "presets": [
@@ -13,39 +40,14 @@
       "react"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/982771/React-Redux-Testing.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/982771/React-Redux-Testing/issues"
-  },
-  "homepage": "https://github.com/982771/React-Redux-Testing#readme",
-  "devDependencies": {
-    "babel-core": "^6.20.0",
-    "babel-loader": "^6.2.9",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "chai": "^3.5.0",
-    "chai-immutable": "^1.6.0",
-    "immutable": "^3.8.1",
-    "jsdom": "^9.8.3",
-    "mocha": "^3.2.0",
-    "react-addons-test-utils": "^15.4.1",
-    "react-hot-loader": "^1.3.1",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
-  },
   "dependencies": {
-    "classnames": "^2.2.5",
-    "css-loader": "^0.26.1",
-    "react": "^15.4.1",
-    "react-addons-pure-render-mixin": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "style-loader": "^0.13.1",
-    "todomvc-app-css": "^2.0.6"
+    "classnames": "^2.2.3",
+    "immutable": "^3.7.6",
+    "react": "^0.14.7",
+    "react-addons-pure-render-mixin": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-redux": "^4.4.1",
+    "redux": "^3.3.1",
+    "todomvc-app-css": "^2.0.4"
   }
 }
